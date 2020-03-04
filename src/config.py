@@ -41,6 +41,7 @@ STAGES = (
 
 DAYS = (
         # Tag / 名前 / 月 / 日 / 年
+        ("current", "現在", 3,3, 2020),
         )
 
 TIMES = (

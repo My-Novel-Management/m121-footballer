@@ -19,6 +19,9 @@ _ = W.getWho()
 ## scenes
 def sc_tmp(w: World):
     return w.scene("Sc: xxx",
+            area=w.Tokyo,
+            stage=w.on_street,
+            day=w.in_current, time=w.at_afternoon,
             )
 
 ## episode
@@ -28,7 +31,7 @@ def ep_tmp(w: World):
             )
 
 ## chapter
-def ch_tmp(w: World):
+def ch_main(w: World):
     return w.chapter("Ch: xxx",
             ep_tmp(w),
             )
